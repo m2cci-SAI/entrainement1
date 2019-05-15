@@ -1,3 +1,5 @@
+import { FormulaireRegisterComponent } from './users/formulaire-register/formulaire-register.component';
+import { FormulaireLoginComponent } from './users/formulaire-login/formulaire-login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,7 +10,9 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormulaireLoginComponent,
+    FormulaireRegisterComponent
   ],
   imports: [
     BrowserModule,
