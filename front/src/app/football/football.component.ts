@@ -1,4 +1,4 @@
-import { IHomevsAway } from './../Model/home.vs.away.model';
+import { IHomevsAway, HomevsAway } from './../Model/home.vs.away.model';
 import { Component, OnInit } from '@angular/core';
 import { IMatch } from '../Model/match.detail.model';
 
@@ -9,11 +9,10 @@ import { IMatch } from '../Model/match.detail.model';
 })
 export class FootballComponent implements OnInit {
 
-  private homevsaway: IHomevsAway;
   private firstVSsecond: IMatch[];
   private firstLastMatch: IMatch[];
   private secondLastMatch: IMatch[];
-  HomevsAway = {
+  private homevsaway : HomevsAway = {
     "firstTeam_VS_secondTeam": [
       {
         "match_id": "367105",
@@ -534,9 +533,9 @@ export class FootballComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.firstVSsecond = this.HomevsAway.firstTeam_VS_secondTeam;
-    this.firstLastMatch = this.HomevsAway.firstTeam_lastResults;
-    this.secondLastMatch = this.HomevsAway.secondTeam_lastResults;
+    this.firstVSsecond = this.homevsaway.firstTeam_VS_secondTeam;
+    this.firstLastMatch = this.homevsaway.firstTeam_lastResults;
+    this.secondLastMatch = this.homevsaway.secondTeam_lastResults;
   }
 
 }
