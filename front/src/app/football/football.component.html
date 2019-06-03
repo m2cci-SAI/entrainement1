@@ -15,60 +15,12 @@
           <th scope="col">away Team</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngFor="let firstVSsecond of firstVSsecond">
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="row">{{firstVSsecond.match_hometeam_name}}</th>
+          <td>{{firstVSsecond.match_hometeam_score}}</td>
+          <td>{{firstVSsecond.match_awayteam_score}}</td>
+          <td>{{firstVSsecond.match_awayteam_name}}</td>
         </tr>
       </tbody>
     </table>
@@ -87,60 +39,12 @@
           <th scope="col">away Team</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngFor="let firstLastMatch of firstLastMatch">
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="row">{{firstLastMatch.match_hometeam_name}}</th>
+          <td>{{firstLastMatch.match_hometeam_score}}</td>
+          <td>{{firstLastMatch.match_awayteam_score}}</td>
+          <td>{{firstLastMatch.match_awayteam_name}}</td>
         </tr>
       </tbody>
     </table>
@@ -149,7 +53,7 @@
   <div class="col-md-4 col-sm-5">
       <h4>Secondteam Last result</h4>
     <table class="table table-bordered">
-      <thead class="thead-light">
+      <thead class="thead-light"> 
         <tr>
           <th scope="col">home Team</th>
           <th scope="col">Goal_H</th>
@@ -157,60 +61,12 @@
           <th scope="col">away Team</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngFor="let secondLastMatch of secondLastMatch">
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="row">{{secondLastMatch.match_hometeam_name}}</th>
+          <td>{{secondLastMatch.match_hometeam_score}}</td>
+          <td>{{secondLastMatch.match_awayteam_score}}</td>
+          <td>{{secondLastMatch.match_awayteam_name}}</td>
         </tr>
       </tbody>
     </table>
