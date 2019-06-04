@@ -8,13 +8,3 @@ export interface IHomevsAway {
      secondTeam_lastResults?: Array<IMatch>;
 
 }
-
-export class HomevsAway implements IHomevsAway {
-
-    constructor(
-     public firstTeam_VS_secondTeam?: Array<IMatch>,
-     public firstTeam_lastResults?: Array<IMatch>,
-     public secondTeam_lastResults?: Array<IMatch>) {
-
-     }
-}

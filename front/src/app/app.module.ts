@@ -8,7 +8,7 @@ import { FootballComponent } from './football/football.component';
 import { SidenavbarComponent } from './football/sidenavbar/sidenavbar.component';
 import { FormulaireLoginComponent } from './users/formulaire-login/formulaire-login.component';
 import { FormulaireRegisterComponent } from './users/formulaire-register/formulaire-register.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,9 @@ import { FormulaireRegisterComponent } from './users/formulaire-register/formula
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
