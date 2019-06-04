@@ -1,3 +1,4 @@
+import { HomeVsawayComponent } from './football/home-vsaway/home-vsaway.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormulaireLoginComponent } from './users/formulaire-login/formulaire-login.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
     {
       path: 'football',
       component: FootballComponent
+     },
+     {
+      path: 'onevsone',
+      component: HomeVsawayComponent
      }
 ];
 

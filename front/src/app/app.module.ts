@@ -1,3 +1,4 @@
+import { HomeVsawayComponent } from './football/home-vsaway/home-vsaway.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     FootballComponent,
     SidenavbarComponent,
     FormulaireLoginComponent,
-    FormulaireRegisterComponent
+    FormulaireRegisterComponent,
+    HomeVsawayComponent
+
   ],
   imports: [
     BrowserModule,
