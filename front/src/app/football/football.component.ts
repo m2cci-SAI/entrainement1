@@ -1,7 +1,8 @@
-import { Homevsaway } from './homevsaway.service';
-import { IHomevsAway } from './../Model/home.vs.away.model';
 import { Component, OnInit } from '@angular/core';
-import { IMatch } from '../Model/match.detail.model';
+import { Homevsaway } from './homevsaway.service';
+// import { IHomevsAway } from './../Model/home.vs.away.model';
+
+// import { IMatch } from '../Model/match.detail.model';
 
 @Component({
   selector: 'app-football',
@@ -9,11 +10,11 @@ import { IMatch } from '../Model/match.detail.model';
   styleUrls: ['./football.component.css']
 })
 export class FootballComponent implements OnInit {
-
+ /*
   private firstVSsecond: IMatch[];
   private firstLastMatch: IMatch[];
   private secondLastMatch: IMatch[];
- /* private homevsaway : HomevsAway = {
+ private homevsaway : HomevsAway = {
     "firstTeam_VS_secondTeam": [
       {
         "match_id": "367105",
@@ -534,12 +535,6 @@ export class FootballComponent implements OnInit {
   constructor(private homevsawayService: Homevsaway) { }
 
   ngOnInit() {
-    this.homevsawayService.getFirstVsSecontMatch().subscribe(result => {
-      this.firstVSsecond = result.firstTeam_VS_secondTeam;
-      this.firstLastMatch = result.firstTeam_lastResults;
-      this.secondLastMatch = result.secondTeam_lastResults;
-
-    });
     // this.firstVSsecond = this.homevsaway.firstTeam_VS_secondTeam;
     // this.firstLastMatch = this.homevsaway.firstTeam_lastResults;
     // this.secondLastMatch = this.homevsaway.secondTeam_lastResults;

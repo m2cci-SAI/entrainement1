@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class Homevsaway {
-  url = 'http://localhost:8091/api/foothvsa';
+  url = 'http://localhost:8091/api/foot';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-type': 'application/json' })
   };
@@ -16,6 +16,6 @@ export class Homevsaway {
    }
 
    getFirstVsSecontMatch(): Observable<IHomevsAway> {
-    return this.http.post<IHomevsAway>(this.url + '/', this.httpOptions);
+    return this.http.post<IHomevsAway>(this.url + '/homevsaway', this.httpOptions);
   }
 }

@@ -1,3 +1,70 @@
-<p>
-  home-vsaway works!
-</p>
+<div class = row >
+<div class="col-md-4 col-sm-1"></div>
+  <div class="col-md-4 col-sm-4">
+      <h4>Firstteam VS SecondTeam</h4>
+    <table class="table table-bordered">   
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">home Team</th>
+          <th scope="col">Goal_H</th>
+          <th scope="col">Goal_A</th>
+          <th scope="col">away Team</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let firstVSsecond of firstVSsecond">
+        <tr>
+          <th scope="row">{{firstVSsecond.match_hometeam_name}}</th>
+          <td>{{firstVSsecond.match_hometeam_score}}</td>
+          <td>{{firstVSsecond.match_awayteam_score}}</td>
+          <td>{{firstVSsecond.match_awayteam_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class=row>
+  <div class="col-md-1 col-sm-1"></div>
+  <div class="col-md-4 col-sm-4">
+      <h4>Firstteam Last result</h4>
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">home Team</th>
+          <th scope="col">Goal_H</th>
+          <th scope="col">Goal_A</th>
+          <th scope="col">away Team</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let firstLastMatch of firstLastMatch">
+        <tr>
+          <th scope="row">{{firstLastMatch.match_hometeam_name}}</th>
+          <td>{{firstLastMatch.match_hometeam_score}}</td>
+          <td>{{firstLastMatch.match_awayteam_score}}</td>
+          <td>{{firstLastMatch.match_awayteam_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2 col-sm-2"></div>
+  <div class="col-md-4 col-sm-4">
+      <h4>Secondteam Last result</h4>
+    <table class="table table-bordered">
+      <thead class="thead-light"> 
+        <tr>
+          <th scope="col">home Team</th>
+          <th scope="col">Goal_H</th>
+          <th scope="col">Goal_A</th>
+          <th scope="col">away Team</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let secondLastMatch of secondLastMatch">
+        <tr>
+          <th scope="row">{{secondLastMatch.match_hometeam_name}}</th>
+          <td>{{secondLastMatch.match_hometeam_score}}</td>
+          <td>{{secondLastMatch.match_awayteam_score}}</td>
+          <td>{{secondLastMatch.match_awayteam_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

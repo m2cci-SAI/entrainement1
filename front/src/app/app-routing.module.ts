@@ -1,3 +1,5 @@
+import { Ligue2Component } from './football/ligue2/ligue2.component';
+import { ChampionchipComponent } from './football/championchip/championchip.component';
 import { HomeVsawayComponent } from './football/home-vsaway/home-vsaway.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,12 +18,23 @@ const routes: Routes = [
     },
     {
       path: 'football',
-      component: FootballComponent
-     },
-     {
-      path: 'onevsone',
-      component: HomeVsawayComponent
-     }
+      component: FootballComponent, children : [
+        {
+          path: 'onevsone',
+          component: HomeVsawayComponent
+         },
+         {
+          path: 'championchip',
+          component: ChampionchipComponent
+         },
+         {
+          path: 'ligue2',
+          component: Ligue2Component
+         }
+      ]
+    }
+
+
 ];
 
 @NgModule({

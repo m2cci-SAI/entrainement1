@@ -10,6 +10,8 @@ import { SidenavbarComponent } from './football/sidenavbar/sidenavbar.component'
 import { FormulaireLoginComponent } from './users/formulaire-login/formulaire-login.component';
 import { FormulaireRegisterComponent } from './users/formulaire-register/formulaire-register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChampionchipComponent } from './football/championchip/championchip.component';
+import { Ligue2Component } from './football/ligue2/ligue2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     SidenavbarComponent,
     FormulaireLoginComponent,
     FormulaireRegisterComponent,
-    HomeVsawayComponent
+    HomeVsawayComponent,
+    ChampionchipComponent,
+    Ligue2Component
 
   ],
   imports: [
