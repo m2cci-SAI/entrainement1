@@ -1,3 +1,29 @@
 <p>
-  championchip works!
+  championchip works!  
 </p>
+<table class="table table-bordered">   
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Rang</th>
+      <th scope="col">Team</th>
+      <th scope="col">Points</th>
+      <th scope="col">Match gagnée</th>
+      <th scope="col">Match à egalité</th>
+      <th scope="col">Match perdu</th>
+      <th scope="col">But Pour</th>
+      <th scope="col">But Contre</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let championchipequipe of championchipClassements">
+    <tr>
+      <th scope="row">{{championchipequipe.overall_league_position}}</th>
+      <td>{{championchipequipe.team_name}}</td>
+      <td>{{championchipequipe.overall_league_PTS}}</td>
+      <td>{{championchipequipe.overall_league_W}}</td>
+      <td>{{championchipequipe.overall_league_D}}</td>
+      <td>{{championchipequipe.overall_league_L}}</td>
+      <td>{{championchipequipe.overall_league_GF}}</td>
+      <td>{{championchipequipe.overall_league_GA}}</td>
+    </tr>
+  </tbody>
+</table>

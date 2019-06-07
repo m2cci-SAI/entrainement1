@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IMatch } from 'src/app/Model/match.detail.model';
-import { Homevsaway } from '../homevsaway.service';
+import { Homevsaway } from '../football.service';
 
 @Component({
   selector: 'app-home-vsaway',

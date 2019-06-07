@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Homevsaway } from './homevsaway.service';
 // import { IHomevsAway } from './../Model/home.vs.away.model';
 
 // import { IMatch } from '../Model/match.detail.model';
@@ -532,7 +531,7 @@ export class FootballComponent implements OnInit {
       }
     ]
   };*/
-  constructor(private homevsawayService: Homevsaway) { }
+  constructor() { }
 
   ngOnInit() {
     // this.firstVSsecond = this.homevsaway.firstTeam_VS_secondTeam;

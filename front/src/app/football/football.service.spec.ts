@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Homevsaway } from './homevsaway.service';
+import { Homevsaway } from './football.service';
 
 describe('Homevsaway.Service.TsService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

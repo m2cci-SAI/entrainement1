@@ -1,7 +1,8 @@
-import { IHomevsAway } from './../Model/home.vs.away.model';
+import { IHomevsAway } from '../Model/home.vs.away.model';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { IChampionchip } from '../Model/championchip';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,9 @@ export class Homevsaway {
 
    getFirstVsSecontMatch(): Observable<IHomevsAway> {
     return this.http.post<IHomevsAway>(this.url + '/homevsaway', this.httpOptions);
+  }
+
+  getChampionchip(): Observable<IChampionchip[]> {
+    return this.http.post<IChampionchip[]>(this.url + '/championchip', this.httpOptions);
   }
 }
